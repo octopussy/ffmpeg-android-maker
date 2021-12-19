@@ -107,6 +107,9 @@ for argument in "$@"; do
     EXTERNAL_LIBRARIES+=("libx264")
     FFMPEG_GPL_ENABLED=true
     ;;
+  --enable-openssl|-openssl)
+      EXTERNAL_LIBRARIES+=( "openssl" )
+    ;;
   --enable-libsrt|-srt)
       EXTERNAL_LIBRARIES+=( "libsrt" )
     ;;
