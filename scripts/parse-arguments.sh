@@ -107,6 +107,9 @@ for argument in "$@"; do
     EXTERNAL_LIBRARIES+=("libx264")
     FFMPEG_GPL_ENABLED=true
     ;;
+  --enable-libsrt|-srt)
+      EXTERNAL_LIBRARIES+=( "libsrt" )
+    ;;
   --enable-all-free | -all-free)
     EXTERNAL_LIBRARIES+=" ${SUPPORTED_LIBRARIES_FREE[@]}"
     ;;
